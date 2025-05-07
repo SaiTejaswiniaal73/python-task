@@ -135,27 +135,98 @@ print(type(capti))
 
 names=dict(teja="la",s="kin")
 print(names,type(names))
+#findin tha duplicate and counting the numbers
 
 
-country_captials={
+num=input("enter number").split()#1 3 7 3 3 5 5 7 9 8 
+print(num)
+dict_num={}
+for i in num:
+  if i not in dict_num:
+    dict_num[i]=1
+  
+  else:
+    dict_num[i]=dict_num[i]+1
+print(dict_num)
+
+# o/p
+# enter number['1', '3', '7', '3', '3', '5', '5', '7', '9', '8']
+# {'1': 1, '3': 3, '7': 2, '5': 2, '9': 1, '8': 1}
+
+Tak:
+evry number has to prepae based on the sort order
+
+num=[int(i) for i in input("enter number:  ").split()]
+num.sort()
+d={}
+print(num)
+for i in num:
+  if i not in d:
+    d[i]=1
+  else:
+    d[i]=d[i]+1
+for i in d:
+  print("{} -{}- {}".format(i,"teju",d[i]))
+
+
+
+scores={
+  "englishg":86,
+  "maths":35,
+  "sci":100,
+  "hin":96,
+  "tel":100
   
 }
+x=scores.get("englishg")
+print(x)
+print(scores.keys())
+print(scores.values())
+print(scores.items())
+for i in scores.keys():
+  print(i)
+for i,j in scores.items():
+  print(i,j)
+
+#some methods pop,delte,update like tha
 
 
+scores={
+  "englishg":86,
+  "maths":35,
+  "sci":100,
+  "hin":96,
+  "tel":100
+}
+scores.pop("englishg")
+print(scores)
+scores.popitem()
+print(scores)
+scores.clear()
+print(scores)
+scores
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+scores={
+  "englishg":86,
+  "maths":35,
+  "sci":100,
+  "hin":96,
+  "tel":100
+}
+print(scores)
+temp={
+  
+}
+tempo={}
+for i in scores:
+  temp[scores[i]]=i
+print(temp)
+for i in scores:
+  key = i 
+  value =scores[i]
+  tempo[value]=key
+print(tempo)
 
 
 
