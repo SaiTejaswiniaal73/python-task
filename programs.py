@@ -1,6 +1,6 @@
 #number related programs
 #check a number is automorphic number or notot
-
+#3/1/25
 # 625-25*25=last 2 digits 25 76*76=1576-last two digit is the number squrw
 num=int(input("enter a number:"))
 len_num=len(str(num))
@@ -73,5 +73,34 @@ else:
 #   return a+b
 # print(add(20,30))
   
-  
-    
+#4/1/25
+lcm anf hcf of numbers in python
+
+print("Hello, World!")
+#lcm and gcd and hcf prpgrma
+# lcm=a*b/gcd( a,b)
+a=int(input("enter a number: "))
+b=int(input("enter a number: "))
+max_ab=a if (a>b) else b
+temp=max_ab
+while True:
+  if max_ab%a==0 and max_ab%b==0:
+   print("lcm is: ",max_ab)
+   break
+  max_ab+=temp
+print("gcd",(a*b)/max_ab)
+# this or this
+
+print("Hello, World!")
+#lcm and gcd and hcf prpgrma
+# lcm=a*b/gcd( a,b)
+a=int(input("enter a number: "))
+b=int(input("enter a number: "))
+for i in range(1,min(a,b)+1):
+  if a%i==0 and b%i==0:
+    gcd=i
+print("gcd: " ,gcd)
+print("lcm: ",(a%b)//gcd)
+
+#6/1/25-next class-day
+
