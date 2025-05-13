@@ -103,4 +103,27 @@ print("gcd: " ,gcd)
 print("lcm: ",(a%b)//gcd)
 
 #6/1/25-next class-day
+#problem solving statment with one example explanation
+
+#fingidn the sum of inidivaal number sum in the one number which is there adn just inidival fibanxis number sum
+num=input("enter a number:  ")
+fibsum=0
+def is_fib(n):
+  a,b=0,1
+  while True:
+    if a==n:
+     return True
+    if a >n:
+      return False
+    a,b=b,a+b
+    
+for i in num:
+  if(is_fib(int(i))):
+    fibsum=fibsum+int(i)
+print(fibsum)
+ #7/1/25
+
+      
+    
+  
 
