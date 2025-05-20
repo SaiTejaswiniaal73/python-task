@@ -97,7 +97,7 @@ print("Hello, World!")
 a=int(input("enter a number: "))
 b=int(input("enter a number: "))
 for i in range(1,min(a,b)+1):
-  if a%i==0 and b%i==0:
+  if a%i==0 and b%i==0:s
     gcd=i
 print("gcd: " ,gcd)
 print("lcm: ",(a%b)//gcd)
@@ -122,6 +122,9 @@ for i in num:
     fibsum=fibsum+int(i)
 print(fibsum)
  #7/1/25
+#if if give input any numbe rand we need to get nearest fib number
+
+
 
       
     
