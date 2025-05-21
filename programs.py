@@ -125,6 +125,316 @@ print(fibsum)
 #if if give input any numbe rand we need to get nearest fib number
 
 
+#neart fin number for the input
+number=76
+a=0
+b=1
+i=1
+while(a<=number):
+  # print(a)
+  c=a+b
+  a=b
+  b=c
+  # i=i+1
+# print(a,b-a)
+#a is right b-a is left
+print(a,b-a)
+if(number-(b-a)<a-number):
+  print(b-a,"neart number")
+
+else:
+  print(a,"near num")
+
+#print fib is the number is fib
+#neart fin number for the input
+number=34
+a=0
+b=1
+i=1
+while(a<=number):
+  # print(a)
+  c=a+b
+  a=b
+  b=c
+  # i=i+1
+
+#a is right b-a is left
+print(a,b-a)
+if((b-a)==number):
+  print(b-a,"it is fib")
+elif((number-(b-a))<a-number):
+  print(b-a,"neart number")
+else:
+  print(a,"near num")
+  
+  
+ #find the highest prime number if the given number digits
+
+#prime number in given digits
+num="12345689"
+res=" "
+first=1
+def is_prime(n):
+  if n>1:
+    for i in range(2,(n//2)+1):
+      if n%i==0:
+        return False
+    return True
+  return False
+# print(is_prime(174))
+for digit in num:
+  if (is_prime(int(digit))):
+    # res+=digit
+# print(res)
+    if(first==1):
+      maxprime=digit
+      first=first+1
+    else:
+      if digit>maxprime:
+        maxprime=digit
+print(maxprime)
+    
+
+    
+#  max prime withput function
+
+#exprerss anuber number with sum of 2 primes
+#i/p:18,o/p:17 19
+#i/p:20 o/p:19,23
+num=18
+def is_prime(n):
+  if(n>1):
+    for i in range(2,((n//2))+1):
+      if n%i==0:
+        return False
+    return  True
+  return False
+if(is_prime(num)):
+  print("it is prime")
+else:
+  lp,rp=num-1,num+1
+  
+  while True :
+    if (is_prime(lp)):
+      print(lp)
+      break
+    lp-=1
+  while True :
+    if (is_prime(rp)):
+      print(rp)
+      break
+    rp+=1
+
+
+#or
+
+
+num=int(input("enter num:"))
+def prime(n):
+  if n>1:
+    for i in range(2,(n//2)+1):
+      if n%i==0:
+        return False
+      return True
+    return False
+
+if(prime(num)):
+  print("it is prime")
+else:
+  left,right=num-1,num+1
+  while True:
+    if(prime(left)):
+      break
+    left-=1
+    
+  while True:
+      if(prime(right)):
+        break
+      righ+=1
+  print(left,right)
+  res="{} {}".format(left,right)if(num-left==right-num) else left if(num-left<right-num) else right
+  print(res)
+  
+#i/p=187
+write the sum of max and min prime of given number=8765432
+o/p=5+7
+o/p=12
+num="134572689"
+res=" "
+first=1
+firstt=1
+def is_prime(n):
+  if n>1:
+    for i in range(2,(n//2)+1):
+      if n%i==0:
+        return False
+    return True
+  return False
+# print(is_prime(174))
+for digit in num:
+  if (is_prime(int(digit))):
+    # res+=digit
+# print(res)
+    if(first==1):
+      maxprime=digit
+      first=first+1
+    else:
+      if digit>maxprime:
+        maxprime=digit
+print(maxprime)
+for digit in num:
+  if (is_prime(int(digit))):
+    # res+=digit
+# print(res)
+    if(firstt==1):
+      minprime=digit
+      firstt=firstt+1
+    else:
+      if digit<minprime:
+        minprime=digit
+print(minprime)
+res=int(maxprime)+int(minprime)
+print(res)
+
+#8/1/25
+
+#fib numbers
+num=int(input("enter num:"))
+a,b,non_fib=0,1,0
+while non_fib!=num:
+  for i in range(a+1,b):
+    non_fib +=1
+    print(i,end=" , ")
+    if non_fib==num:
+      break
+  a,b=b,a+b
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+ 
+
+
 
       
     
