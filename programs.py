@@ -309,7 +309,19 @@ while non_fib!=num:
       break
   a,b=b,a+b
 
-
+#binaru to num
+num=int(input(""))
+count=0
+temp=num
+dec=0
+while num!=0:
+  rem=num%10
+  dec=dec+(2**count)*rem
+  num=num//10
+  count+=1
+print("decimal for {} is {}".format(temp,dec))
+  
+  
 
 
 
