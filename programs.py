@@ -322,21 +322,92 @@ while num!=0:
 print("decimal for {} is {}".format(temp,dec))
   
   
+#if i/p is string bin to decimal
+num=input("enter a num: ")
+dec=0
+for i in range (len(num)-1,-1,-1):
+  dec+=(2**(len(num)-i-1))*int(num[i])
+print(dec)
+#homw work
+#program to convet decimal to binaru
+i/p:5 o/p:101
+#prints sum of non_fib numbers as per the i/p
+i/p:3
+o/p:17
+
+
+#9/1/25
+#program to convet decimal to binaru
+#decimal to binary
+num=int(input("entera num:"))
+s=" "
+while (num!=0):
+  rem=num%2
+  s=str(rem)+s
+  num=num//2
+print(s)
+#aramstrong numbers
+
+  #retrun if arm strong
+# 1cube+3 cube+5 cube=153//sum of powers of inidvial digits is called as aramstog
+
+num=input("enter a num: ")
+res=0
+power=len(num)
+for i in num:
+  res+=int(i)**power
+print(num==str(res))
+print(res,num)
+#list of number tell the number
+num1=int(input("enter a num: "))
+def armstrong(num):
+  res=0
+  power=len(num)
+  for i in num:
+    res+=int(i)**power
+  return num==str(res)
+for i in range(1,num1+1):
+  if(armstrong(str(i))):
+    print(i)
+
+#check wheather a num is perfect umber or not
+
+# factprs of 15-1,5,3-not perfcat
+# fact of 6-1,2,3--perfect
+# fact of 28-1,2,4,7,14--perfect
+#perfect number are not
+# factore of 15 -- 1,3,5
+num=int(input("enter a num: "))
+sum=0
+for i in range(1,num//2+1):
+  if num%i==0:
+    sum+=i
+if (sum==num):
+  print(f"{num} is a perfect num")
+else:
+  print(f"{num}is  not a perfect num")
+  
+#o/p
+#enter a num: 27is  not a perfect num
+#enter a num: 28 is a perfect num
 
 
 
 
+#10/1/25
 
+#i/p:abcdcd
+# o/p:
+# 2-cdc - it is 2 times in the main string
 
-
-
-
-
-
-
-
-
-
+string1="abcdcdc"
+sub_string="cdc"
+count=0
+for i in range(0,len(string1)):
+  if string1[i]==sub_string[0]:
+    if(string1[i:i+len(sub_string)]==sub_string):
+      count+=1
+print(count)
 
 
 
