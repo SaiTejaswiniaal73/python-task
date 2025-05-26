@@ -410,8 +410,37 @@ for i in range(0,len(string1)):
 print(count)
 
 
+#range of perfect number
+num=int(input("enter a num to find perfect numbe range:"))
+count=0
+for j in range(1,num+1):
+  res=0
+  for i in range(1,(j//2)+1):
+    if j%i==0:
+      res=res+i
+      # print(res)
+  if(j==res):
+    print(j)
+    count+=1
+print(count)
+    
+i/p:1000
+o/p:6,28,496
 
+#rev numbers:
 
+num=int(input("enter a num to find reverse numbe range:"))
+temp,res=num,0
+while num!=0:
+  rem=num%10
+  res=res*10+rem
+  # res=res+num
+  # res+=1
+  num=num//10
+print(res==temp)
+print(res)
+  
+#15/1/25
 
 
 
