@@ -101,7 +101,7 @@ print(one_max)
 
 
 #18/1/25
-#finde the number thta come once in it
+#finde the number that come once in it
 
 
 
