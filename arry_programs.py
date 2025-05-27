@@ -39,6 +39,8 @@ o/p:
 [20, 15, 26, 2, 98, 6]
 [2, 6, 15, 20, 26, 98]
 4 3 5 1 6 2 
+
+17/1/25
 # 3 rearranign the arr in 1st half increaisng and 2nd half decrsing
 
 num=[int(i) for i in input().split()]
@@ -97,6 +99,9 @@ for i in num:
 one_max=max(one_max,count)
 print(one_max)
 
+
+#18/1/25
+#finde the number thta come once in it
 
 
 
