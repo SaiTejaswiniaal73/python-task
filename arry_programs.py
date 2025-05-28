@@ -101,7 +101,53 @@ print(one_max)
 
 
 #18/1/25
-#finde the number that come once in it
+# 6 finde the number that come once in it
+num=input().split()
+temp=[]
+x=False
+count=0
+print(num)
+for i in num:
+  if i not in temp:
+    temp.append(i)
+for i in temp:
+  if num.count(i)==1:
+    x=True
+    break
+if x:
+  print(i)
+else:
+  print("no single term elemtn in the given array")
+  #i/p : 1  2  3  2  3  4  1 7   7 and
+# o/p:['1', '2', '3', '2', '3', '4', '1', '7', '7']
+# 4
+
+#using function
+
+
+def repeated(num):
+  temp=[]
+  x=False
+  for i in num:
+    if i not in temp:
+      temp.append(i)
+  for i in temp:
+    if num.count(i)==1:
+      return i
+
+  return "no single term elemtn in the given array"
+num=input().split()
+print(repeated(num))
+#7 check if an arry of elemnst where 2 number sum is equal to target
+def targetSum(num,target):
+  for i in range (0,len(num)):
+    for j in range(i+1,len(num)):
+      if int(num[i])+int(num[j])==target:
+        return "yes"
+  return "no"
+num=input().split()
+target=140
+print(targetSum(num,target))
 
 
 
