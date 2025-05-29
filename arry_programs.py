@@ -149,9 +149,52 @@ num=input().split()
 target=140
 print(targetSum(num,target))
 
+#21/1/25
+#factoril of least digit in the given number an dminum number findind
+num=input()
+min1=num[0]
+res=" "
+for i in num:
+  if i <min1:
+    min1=i
+print(min1,type(min1))
+prod=1
+for i in range(1,int(min1)):
+  if i==int(min1):
+    res=res+str(i)+"="
+  else:
+    res=res+str(i)+"*"
+  prod*=i
+print(res,prod)
+#if is is in number formate
 
+#all the digit in the prime in the given number
+num=input()
+prime=0
+def isPrime(n):
+  if n>1:
+    for i in range(2,(n//2)+1):
+      if n%i==0:
+        return False
+    return True
+  return False
+for digit in num:
+  if (isPrime(int(digit))):
+    prime+=1
+  else:
+    print(False)
+    break
+if prime==len(num):
+  print(True)
 
-
+#counting the pair of socks meanscoutn number wi=hih are of 2 times
+num=input()#5
+num=input().split()
+colors=set(num)
+print(num)
+for i in colors:
+  pairs+=num.count(i)//2,i
+print(pairs)
 
 
 
